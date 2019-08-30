@@ -1,0 +1,19 @@
+---
+title: "Template"
+author: "Stefan Eng"
+date: "8/7/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(pander)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, results='asis'}
+panderOptions('knitr.auto.asis', FALSE)
+for(d in datasets) {
+  pander::pander(d, split.table=120)
+}
+```
