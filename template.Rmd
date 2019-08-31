@@ -1,5 +1,5 @@
 ---
-title: "Template"
+title: "Example Template"
 author: "Stefan Eng"
 date: "8/7/2019"
 output: pdf_document
